@@ -1,38 +1,112 @@
-.App {
-  text-align: center;
+.canela-thin-italic {
+  font-family: "CanelaThinItalic";
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.canela-light {
+  font-family: "CanelaLightItalic";
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+/* home */
+.container {
+  position: relative;
+  overflow: hidden;
+}
+
+.content {
+  height: 100vh;
+  display: grid;
+  place-items: center;
+  z-index: 5;
+  position: relative
+}
+
+.fuzzy-overlay {
+  position: absolute;
+  inset: -200%;
+  background-image: url("noise.png");
+  opacity: 25%;
+  animation: shift 0.5s linear infinite both;
+  
+}
+
+@keyframes shift {
+  0% {
+    transform: translateX(20%) translateY(20%)
+
+  }
+  100% {
+    transform: translateX(-20%) translateY(-20%)
+
   }
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.landing-text {
   display: flex;
   flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items: center;
 }
 
-.App-link {
-  color: #61dafb;
+.cloud1 {
+  position: absolute;
+  bottom: -10vh;
+  left: -10vw;
+  z-index: 1;
+  width: 60vw;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.cloud2 {
+  position: absolute;
+  bottom: 10vh;
+  left: -30vw;
+  width: 60vw;
+}
+
+.cloud3 {
+  position: absolute;
+  bottom: -20vh;
+  right: -15vw;
+  z-index: 1;
+  width: 75vw;
+
+}
+
+.cloud4 {
+  position: absolute;
+  right: -35vw;
+  z-index: 1;
+  bottom: 10vh;
+  width: 70vw;
+}
+
+.cloud5 {
+  position: absolute;
+  right: -15vw;
+  top: -25vh;
+  z-index: -1;
+  width: 70vw;
+}
+
+.cloud6 {
+  position: absolute;
+  left: -10vw;
+  z-index: 1;
+  top: -40vh;
+  width: 60vw;
+}
+
+.cloud7 {
+  position: absolute;
+  left: 20vw;
+  z-index: 1;
+  top: -23vh;
+  width: 60vw;
+}
+
+.cloud8 {
+  position: absolute;
+  left: -20vw;
+  z-index: 1;
+  top: -17vh;
+  width: 60vw;
 }
