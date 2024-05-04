@@ -45,6 +45,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  margin-top: -30vh;
 }
 
 .cloud1 {
@@ -109,4 +110,220 @@
   z-index: 1;
   top: -17vh;
   width: 60vw;
+}
+
+.angel {
+  position: absolute;
+  z-index: 1;
+  left: -5vw;
+  bottom: 0;
+  width: 35vw;
+}
+
+.lion {
+  position: absolute;
+  z-index: 1;
+  left: -1vw;
+  bottom: 30vh;
+  width: 13vw;
+}
+
+.alice {
+  z-index: 2;
+  position: absolute;
+  left: -2vw;
+  top: 0;
+  width: 10vw;
+}
+
+.elephant {
+  z-index: 1;
+  position: absolute;
+  left: -1vw;
+  top: -6vh;
+  width: 30vw;
+}
+
+.saturn {
+  position: absolute;
+  z-index: 1;
+  left: 13vw;
+  bottom: -26vh;
+  width: 20vw;
+  rotate: 100deg;
+}
+
+.cat {
+  position: absolute;
+  z-index: 1;
+  left: 25vw;
+  bottom: -15vh;
+  width: 20vw;
+}
+
+.womansmoke {
+  position: absolute;
+  z-index: 1;
+  left: 32vw;
+  bottom: -20vh;
+  width: 28vw;
+}
+
+.womanlip {
+  position: absolute;
+  z-index: 2;
+  right: -12vw;
+  bottom: -20vh;
+  width: 30vw;
+}
+
+.woman {
+  position: absolute;
+  z-index: 1;
+  right: 10vw;
+  bottom: -14vh;
+  width: 18vw;
+  rotate: -10deg;
+}
+
+.flower {
+  position: absolute;
+  z-index: 1;
+  right: 35vw;
+  bottom: -10vh;
+  width: 13vw;
+  rotate: -20deg;
+}
+
+.harp {
+  position: absolute;
+  z-index: 1;
+  right: 20vw;
+  bottom: -5vh;
+  width: 20vw;
+  transform: scaleX(-1);
+}
+
+.dress {
+  position: absolute;
+  z-index: 1;
+  right: 21vw;
+  bottom: 20vh;
+  width: 13vw;
+}
+
+.die {
+  z-index: 2;
+  position: absolute;
+  left: 5vw;
+  top: 18vh;
+  width: 20vw;
+  rotate: -50deg;
+}
+
+.reach {
+  z-index: 1;
+  position: absolute;
+  left: 7vw;
+  top: -10vh;
+  width: 55vw;
+}
+
+.catfunny {
+  position: absolute;
+  z-index: 2;
+  right: 2vw;
+  top: -10vh;
+  width: 40vw;
+}
+
+.moon {
+  position: absolute;
+  z-index: 1;
+  right: 20vw;
+  top: -15vh;
+  width: 40vw;
+}
+
+.ship {
+  position: absolute;
+  z-index: 1;
+  right: 45vw;
+  top: -2vh;
+  width: 20vw;
+}
+
+.angelcutout1 {
+  position: absolute;
+  z-index: 2;
+  right: 2vw;
+  top: -10vh;
+  width: 30vw;
+}
+
+.angelcutout2 {
+  position: absolute;
+  z-index: 2;
+  right: -2vw;
+  top: 5vh;
+  width: 30vw;
+}
+
+.angelcutout3 {
+  position: absolute;
+  z-index: 2;
+  right: -6vw;
+  top: 20vh;
+  width: 30vw;
+}
+
+.butterfly1 {
+  position: absolute;
+  z-index: 2;
+  left: 30vw;
+  top: 5vh;
+  width: 5vw;
+}
+
+.butterfly2 {
+  position: absolute;
+  z-index: 2;
+  right: 7vw;
+  bottom: 20vh;
+  width: 5vw;
+}
+
+.circle {
+    position: absolute;
+    bottom: 40vh;
+    right: 35vw;
+    z-index: 3;
+    width: 5vw;
+    height: 8vh;
+    border: 1px solid rgb(214, 213, 213);
+    background-color: black;
+    border-radius: 31% 45% 74% 35% / 38% 56% 51% 87%;
+    transition: 0.5s;
+    animation: animate-about2 12s linear infinite;
+}
+
+.circle::before{
+  content: "→";
+  color: white;
+  font-size: 5vh;
+  font-family: "CanelaReg";
+  margin-left: 1.5vw;
+}
+
+.background-circle {
+  position: absolute;
+  bottom: 41vh;
+  right: 34vw;
+  z-index: -1;
+  width: 5vw;
+  height: 8vh;
+  border: 1px solid rgb(214, 213, 213);
+  border-radius: 31% 45% 74% 35% / 38% 56% 51% 87%;
+  transition: 0.5s;
+  animation: animate-about2 12s linear infinite;
 }
