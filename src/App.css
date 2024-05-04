@@ -407,7 +407,7 @@
   background: linear-gradient(var(--color-1), var(--color-2));
   animation: changeColors 3s infinite alternate;
   -webkit-text-fill-color: transparent;
-  -webkit-background-clip: text;
+  background-clip: text;
 }
 
 @keyframes changeColors {
@@ -673,8 +673,8 @@ filter: blur(5px);
   }
 
   .die-about {
-    right: 10vw;
-    bottom: 20vh;
+    right: 11vw;
+    bottom: 22vh;
     width: 20vw;
   }
   
