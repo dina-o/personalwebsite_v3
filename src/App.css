@@ -369,10 +369,10 @@
 .die-about {
   z-index: 2;
   position: absolute;
-  right: 12vw;
-  bottom: 10vh;
+  right: 5vw;
+  bottom: 12vh;
   width: 15vw;
-  rotate: 20deg;
+  rotate: 10deg;
   animation: tilt 2s linear infinite;
 }
 
@@ -529,4 +529,19 @@ filter: blur(5px);
   font-family: Maeslstrom;
   text-shadow: 
     5px 5px 0px #ff3232;
+}
+
+#page-transition-name {
+  animation: transitionIn 2s;
+}
+
+@keyframes transitionIn {
+  from {
+    opacity: 0; 
+    transform: rotateX(-30deg);
+  }
+  to {
+    opacity: 1;
+    transform: rotateX(0);
+  }
 }

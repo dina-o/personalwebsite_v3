@@ -45,7 +45,7 @@ import butterfly from '../images/butterfly.gif'
       tl.fromTo('.cat', { opacity: 0, y: -100 }, { opacity: 1, y: 0, ease: 'power2.out', delay: 0.3 }, '<');
       tl.fromTo('.womansmoke', { opacity: 0, scale: 0 }, { opacity: 1, scale: 1, ease: 'power1.inOut', delay: 0.3 }, '<');
       tl.fromTo('.womanlip', { opacity: 0, scale: 0 }, { opacity: 1, scale: 1, ease: 'power1.inOut', delay: 0.3 }, '<');
-      tl.fromTo('.woman', { opacity: 0, x: 100 }, { opacity: 1, x: 0, ease: 'power3.out', delay: 0.3 }, '<');
+      tl.fromTo('.woman', { opacity: 0, x: 100 }, { opacity: 1, x: 0, ease: 'power3.out', delay: 0.5 }, '<');
       tl.fromTo('.flower', { opacity: 0, y: 200 }, { opacity: 1, y: 0, ease: 'back.out(1.7)', delay: 0.3 }, '<');
       tl.fromTo('.harp', { opacity: 0, scale: 0 }, { opacity: 1, scale: 1, ease: 'elastic.out(1, 0.3)', delay: 0.3 }, '<');
       tl.fromTo('.dress', { opacity: 0, scale: 0 }, { opacity: 1, scale: 1, ease: 'power1.inOut', delay: 0.3 }, '<');
@@ -55,7 +55,7 @@ import butterfly from '../images/butterfly.gif'
       tl.fromTo('.moon', { opacity: 0, y: -100 }, { opacity: 1, y: 0, ease: 'power2.out', delay: 0.3 }, '<');
       tl.fromTo('.ship', { opacity: 0, x: 100 }, { opacity: 1, x: 0, ease: 'power3.out', delay: 0.3 }, '<');
 
-      tl.fromTo('.angelcutout1', { opacity: 0, scale: 0 }, { opacity: 1, scale: 1, ease: 'power1.inOut', delay: 0.5 }, '<');
+      tl.fromTo('.angelcutout1', { opacity: 0, scale: 0 }, { opacity: 1, scale: 1, ease: 'power1.inOut', delay: 0.3 }, '<');
       tl.fromTo('.angelcutout2', { opacity: 0, scale: 0 }, { opacity: 1, scale: 1, ease: 'power1.inOut', delay: 0.2 }, '<');
       tl.fromTo('.angelcutout3', { opacity: 0, scale: 0 }, { opacity: 1, scale: 1, ease: 'power1.inOut', delay: 0.2 }, '<');
 

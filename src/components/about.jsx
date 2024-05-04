@@ -1,5 +1,6 @@
 import {Heading, Stack, Spacer, HStack, VStack, Text, Flex} from '@chakra-ui/react'
-import React from 'react';
+import {React, useEffect} from 'react';
+import {gsap, Power3} from 'gsap';
 import ladybug from '../images/ladybug.png'
 import angel from '../images/angel.png'
 import die from '../images/die.png'
@@ -9,6 +10,19 @@ import overlay2 from '../images/overlay2.jpg'
 import overlay3 from '../images/overlay3.jpg'
 
  const About = () => {
+
+    useEffect(() => {
+        const tl = gsap.timeline();
+        tl.fromTo('.who-i-am', {
+          opacity: 0,
+          y: 100,
+        }, {
+          opacity: 1,
+          y: 0,
+          ease: 'power3.out',
+          delay: 1
+        })
+      }, []);
 
     return (
      <> 
@@ -21,8 +35,8 @@ import overlay3 from '../images/overlay3.jpg'
 
         <div className='content'>
 
-            <Text fontSize='3vh' fontFamily="CanelaLightItalic" color='white'>(WHO I AM)</Text>
-            <Text fontSize='8vh' fontFamily="CanelaThin" color='white' style={{ display: 'flex', alignItems: 'center' }}>
+            <Text className='who-i-am' fontSize='3vh' fontFamily="CanelaLightItalic" color='white'>(WHO I AM)</Text>
+            <Text id='page-transition-name' fontSize='8vh' fontFamily="CanelaThin" color='white' style={{ display: 'flex', alignItems: 'center' }}>
                 dina <img className="ladybug" src={ladybug} alt="Ladybug"/> orucevic
             </Text>
 
@@ -35,8 +49,8 @@ import overlay3 from '../images/overlay3.jpg'
         <div className='container'>
             <div className='content' style={{ height: '120vh'}}>
 
-                <Heading fontWeight='100' fontSize='12vh' fontFamily="CanelaThin" color='white' marginTop= "-5vh" padding="15%"  textAlign="center">
-                    I’M AN UNDERGRAD, CSS GEEK, DEF NOT ARTSY   <i className="colour-gradient" style={{ fontFamily: 'CanelaLightItalic'}}>UX DESIGNER</i>   READY TO TAKE YOUR DIGITAL EXPERIENCE <b className='next-level' style={{ fontFamily: 'CanelaRegItalic'}}>TO THE NEXT LEVEL</b>
+                <Heading fontWeight='100' fontSize='12vh' fontFamily="CanelaThin" color='white' marginTop= "-5vh" padding="15%"  textAlign="center" zIndex = '3'>
+                    I’M AN UNDERGRAD, CSS GEEK, DEF NOT ARTSY   <i className="colour-gradient" style={{ fontFamily: 'CanelaLightItalic'}}>UX DESIGNER</i>   READY TO TAKE YOUR DIG EXPERIENCE <br/> <b className='next-level' style={{ fontFamily: 'CanelaRegItalic'}}>TO THE VERY NEXT LEVEL</b>
                 </Heading>
 
                 <img className="die-about" src={die}></img>
