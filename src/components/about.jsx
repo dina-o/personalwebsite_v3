@@ -43,7 +43,7 @@ import overlay3 from '../images/overlay3.jpg'
         <div className='content' style={{ height: '140vh'}}>
 
           <Heading fontWeight='100' fontSize='12vh' fontFamily="CanelaThin" color='white' marginTop= "-5vh" padding="12%"  textAlign="center" zIndex = '3'>
-            I’M A <a style={{ color: "brown"}}>CAFFEINATED</a> UNDERGRAD, CSS GEEK, BUDDING <b  style={{ fontFamily: 'CanelaLightItalic', color: "pink"}}>PRODUCT MANAGER</b> / <i className="colour-gradient" style={{ fontFamily: 'CanelaLightItalic'}}>WEB DEVELOPER</i> FOCUSED ON LEVERAGING THE LATEST TECH TO MAKE THE WORLD <br/> <b className='better-place' style={{ fontFamily: 'CanelaRegItalic'}}> A BETTER PLACE</b>
+            I’M A <a style={{ color: "#6c4a30", textShadow: '5px 5px 10px brown'}}>CAFFEINATED</a> UNDERGRAD, CSS GEEK, BUDDING <b  style={{ fontFamily: 'CanelaLightItalic', color: "pink"}}>PRODUCT MANAGER</b> / <i className="colour-gradient" style={{ fontFamily: 'CanelaLightItalic'}}>WEB DEVELOPER</i> FOCUSED ON LEVERAGING THE LATEST TECH TO MAKE THE WORLD <br/> <b className='better-place' style={{ fontFamily: 'CanelaRegItalic'}}> A BETTER PLACE</b>
           </Heading>
           <img className="die-about" src={die}></img>
           <img className="angel-about" src={angel}></img>
@@ -116,7 +116,7 @@ import overlay3 from '../images/overlay3.jpg'
                   <div style={{padding: '20% 5% 0 5%'}}>
                       <Text className="after-overlay"  style={{fontSize: "6vh", color: "#6A737E"}}>✷✷✷</Text>
                       <br />
-                      <Text className="after-overlay" style={{fontSize: "4vh", paddingLeft: "20px" }}>JavaScript, jQuery, Python, PostgresSQL</Text>
+                      <Text className="after-overlay" style={{fontSize: "4vh", paddingLeft: "20px" }}>JavaScript / jQuery / Python / PostgresSQL</Text>
                   </div>
                 </VStack>
                 <div className="img-overlay">
