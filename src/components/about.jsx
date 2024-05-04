@@ -47,10 +47,10 @@ import overlay3 from '../images/overlay3.jpg'
         </div>
 
         <div className='container'>
-            <div className='content' style={{ height: '120vh'}}>
+            <div className='content' style={{ height: '140vh'}}>
 
-                <Heading fontWeight='100' fontSize='12vh' fontFamily="CanelaThin" color='white' marginTop= "-5vh" padding="15%"  textAlign="center" zIndex = '3'>
-                    I’M AN UNDERGRAD, CSS GEEK, DEF NOT ARTSY   <i className="colour-gradient" style={{ fontFamily: 'CanelaLightItalic'}}>UX DESIGNER</i>   READY TO TAKE YOUR DIG EXPERIENCE <br/> <b className='next-level' style={{ fontFamily: 'CanelaRegItalic'}}>TO THE VERY NEXT LEVEL</b>
+                <Heading fontWeight='100' fontSize='12vh' fontFamily="CanelaThin" color='white' marginTop= "-5vh" padding="12%"  textAlign="center" zIndex = '3'>
+                    I’M A <a style={{ color: "brown"}}>CAFFEINATED</a> UNDERGRAD, CSS GEEK, BUDDING <b  style={{ fontFamily: 'CanelaLightItalic', color: "pink"}}>PRODUCT MANAGER</b> / <i className="colour-gradient" style={{ fontFamily: 'CanelaLightItalic'}}>WEB DEVELOPER</i>   FOCUSED ON LEVERAGING THE LATEST TECH TO MAKE THE WORLD <br/> <b className='next-level' style={{ fontFamily: 'CanelaRegItalic'}}> A BETTER PLACE</b>
                 </Heading>
 
                 <img className="die-about" src={die}></img>
@@ -74,7 +74,7 @@ import overlay3 from '../images/overlay3.jpg'
                 <div className="bottom-text">
                     <Text className="after-overlay"  style={{fontSize: "6vh", color: "#6A737E"}}>✷✷✷</Text>
                     <br />
-                    <Text className="after-overlay" style={{fontSize: "4vh", paddingLeft: "20px" }}>React JS / TypeScript / Chakra UI / Temporal</Text>
+                    <Text className="after-overlay" style={{fontSize: "4vh", paddingLeft: "20px" }}>React JS / TypeScript / Node.js / MongoDB</Text>
                 </div>
                 </VStack>
                 <div className="img-overlay">
@@ -96,7 +96,7 @@ import overlay3 from '../images/overlay3.jpg'
                 <img src={overlay2}></img>
                 <VStack style={{fontFamily: "CanelaRegItalic"}}>
                 <div className="back-text">
-                    <Text className="after-overlay" style={{fontSize: "5vh"}}>Worked on navigation and authoritative content features for bank employees' coaching dashboards.</Text>
+                    <Text className="after-overlay" style={{fontSize: "5vh"}}>Reproducing and refactoring wireframes on the frontend for mortgage application summary pages.</Text>
                 </div>
                 <div className="bottom-text">
                     <Text className="after-overlay"  style={{fontSize: "6vh", color: "#6A737E"}}>✷✷✷</Text>
@@ -123,12 +123,12 @@ import overlay3 from '../images/overlay3.jpg'
                 <img src={overlay3}></img>
                 <VStack style={{fontFamily: "CanelaRegItalic"}}>
                 <div className="back-text">
-                    <Text className="after-overlay" style={{fontSize: "5vh"}}>Reproducing and refactoring wireframes on the frontend for mortgage application summary pages.</Text>
+                    <Text className="after-overlay" style={{fontSize: "5vh"}}>Focused on enhancing client-facing logic to optimize user experience and page load time for large entertainment brands to perform campaign metrics on customers.</Text>
                 </div>
-                <div className="bottom-text">
+                <div style={{padding: '20% 5% 0 5%'}}>
                     <Text className="after-overlay"  style={{fontSize: "6vh", color: "#6A737E"}}>✷✷✷</Text>
                     <br />
-                    <Text className="after-overlay" style={{fontSize: "4vh", paddingLeft: "20px" }}>React JS / TypeScript / Chakra UI / Temporal</Text>
+                    <Text className="after-overlay" style={{fontSize: "4vh", paddingLeft: "20px" }}>JavaScript, jQuery, Python, PostgresSQL</Text>
                 </div>
                 </VStack>
                 <div className="img-overlay">

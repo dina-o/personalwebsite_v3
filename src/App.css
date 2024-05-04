@@ -369,8 +369,8 @@
 .die-about {
   z-index: 2;
   position: absolute;
-  right: 5vw;
-  bottom: 12vh;
+  right: 10vw;
+  bottom: 10vh;
   width: 15vw;
   rotate: 10deg;
   animation: tilt 2s linear infinite;
@@ -380,8 +380,8 @@
 .marie-about {
   z-index: 2;
   position: absolute;
-  left: 5vw;
-  top: 30vh;
+  left: 3vw;
+  top: 35vh;
   width: 15vw;
   rotate: -5deg;
 }
