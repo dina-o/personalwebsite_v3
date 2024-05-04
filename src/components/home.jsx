@@ -64,8 +64,6 @@ import butterfly from '../images/butterfly.gif'
 
       tl.fromTo('.background-circle', { opacity: 0, y: 100 }, { opacity: 1, y: 0, ease: 'back.out(0.5)', delay: 0.3 }, '<');
       tl.fromTo('.circle', { opacity: 0, y: 100 }, { opacity: 1, y: 0, ease: 'back.out(0.5)'});
-
-
   }, []);
 
     const navigate = useNavigate();
@@ -74,23 +72,21 @@ import butterfly from '../images/butterfly.gif'
       navigate('/about');
     };
 
-  
     return (
      <> 
-    <div className='container'>
+      <div className='container'>
 
         <div className='content'>
 
             <div className='landing-text'>
-                    <Text className='greetings' fontSize='15vh' fontFamily="CanelaLightItalic" color='white'>greetings,</Text>
-                    <Text fontSize='8vh' fontFamily="CanelaThin" color='white' marginTop='-5vh'>i'm dina</Text>
+              <Text className='greetings' fontSize='15vh' fontFamily="CanelaLightItalic" color='white'>greetings,</Text>
+              <Text fontSize='8vh' fontFamily="CanelaThin" color='white' marginTop='-5vh'>i'm dina</Text>
             </div>
 
             <img className="cloud1" src={cloud}></img>
             <img className="cloud2" src={cloud}></img>
             <img className="cloud3" src={cloud}></img>
             <img className="cloud4" src={cloud}></img>
-
             <img className="cloud5" src={cloud}></img>
             <img className="cloud6" src={cloud}></img>
             <img className="cloud7" src={cloud}></img>
@@ -124,9 +120,9 @@ import butterfly from '../images/butterfly.gif'
             <div className='background-circle'></div>
 
         </div>
-        <div className='fuzzy-overlay'></div>
+        <div className='static-overlay'></div>
    
-    </div>
+      </div>
      </>
     );
   }

@@ -26,59 +26,49 @@ import overlay3 from '../images/overlay3.jpg'
 
     return (
      <> 
-    <div className='container' style={{ height: '100vh'}}>
-
-    <hr  style={{
-            color: 'white',
-            marginTop: '3%'
-        }}/>
+      <div className='container' style={{ height: '100vh'}}>
+        <hr style={{color: 'white', marginTop: '3%'}}/>
 
         <div className='content'>
-
             <Text className='who-i-am' fontSize='3vh' fontFamily="CanelaLightItalic" color='white'>(WHO I AM)</Text>
             <Text id='page-transition-name' fontSize='8vh' fontFamily="CanelaThin" color='white' style={{ display: 'flex', alignItems: 'center' }}>
                 dina <img className="ladybug" src={ladybug} alt="Ladybug"/> orucevic
             </Text>
-
         </div>
         
-        <div className='fuzzy-overlay'></div>
-        
+        <div className='static-overlay'></div>
+      </div>
+
+      <div className='container'>
+        <div className='content' style={{ height: '140vh'}}>
+
+          <Heading fontWeight='100' fontSize='12vh' fontFamily="CanelaThin" color='white' marginTop= "-5vh" padding="12%"  textAlign="center" zIndex = '3'>
+            I’M A <a style={{ color: "brown"}}>CAFFEINATED</a> UNDERGRAD, CSS GEEK, BUDDING <b  style={{ fontFamily: 'CanelaLightItalic', color: "pink"}}>PRODUCT MANAGER</b> / <i className="colour-gradient" style={{ fontFamily: 'CanelaLightItalic'}}>WEB DEVELOPER</i> FOCUSED ON LEVERAGING THE LATEST TECH TO MAKE THE WORLD <br/> <b className='better-place' style={{ fontFamily: 'CanelaRegItalic'}}> A BETTER PLACE</b>
+          </Heading>
+          <img className="die-about" src={die}></img>
+          <img className="angel-about" src={angel}></img>
+          <img className="marie-about" src={marie}></img>
         </div>
+        <div className='static-overlay'></div>
+      </div>
 
-        <div className='container'>
-            <div className='content' style={{ height: '140vh'}}>
-
-                <Heading fontWeight='100' fontSize='12vh' fontFamily="CanelaThin" color='white' marginTop= "-5vh" padding="12%"  textAlign="center" zIndex = '3'>
-                    I’M A <a style={{ color: "brown"}}>CAFFEINATED</a> UNDERGRAD, CSS GEEK, BUDDING <b  style={{ fontFamily: 'CanelaLightItalic', color: "pink"}}>PRODUCT MANAGER</b> / <i className="colour-gradient" style={{ fontFamily: 'CanelaLightItalic'}}>WEB DEVELOPER</i>   FOCUSED ON LEVERAGING THE LATEST TECH TO MAKE THE WORLD <br/> <b className='next-level' style={{ fontFamily: 'CanelaRegItalic'}}> A BETTER PLACE</b>
-                </Heading>
-
-                <img className="die-about" src={die}></img>
-                <img className="angel-about" src={angel}></img>
-                <img className="marie-about" src={marie}></img>
-
-            </div>
-            <div className='fuzzy-overlay'></div>
-        </div>
-
-        <div className='container'>
-
+      <div className='container'>
         <HStack>
             <div className="item">
-            <div className="item-wrapper">
+              <div className="item-wrapper">
                 <img src={overlay}></img>
                 <VStack style={{fontFamily: "CanelaRegItalic"}}>
-                <div className="back-text">
-                    <Text className="after-overlay" style={{fontSize: "5vh"}}>Designed and developed end to end proof of concepts for Visa's Pay by Bank feature and Interac.</Text>
-                </div>
-                <div className="bottom-text">
-                    <Text className="after-overlay"  style={{fontSize: "6vh", color: "#6A737E"}}>✷✷✷</Text>
-                    <br />
-                    <Text className="after-overlay" style={{fontSize: "4vh", paddingLeft: "20px" }}>React JS / TypeScript / Node.js / MongoDB</Text>
-                </div>
+                  <div className="back-text">
+                      <Text className="after-overlay" style={{fontSize: "5vh"}}>Designed and developed end to end proof of concepts for Visa's Pay by Bank feature and Interac.</Text>
+                  </div>
+                  <div className="bottom-text">
+                      <Text className="after-overlay"  style={{fontSize: "6vh", color: "#6A737E"}}>✷✷✷</Text>
+                      <br />
+                      <Text className="after-overlay" style={{fontSize: "4vh", paddingLeft: "20px" }}>React JS / TypeScript / Node.js / MongoDB</Text>
+                  </div>
                 </VStack>
                 <div className="img-overlay">
-                    <VStack className="item-name">
+                  <VStack className="item-name">
                     <VStack alignItems="left">
                         <Text style={{textAlign: 'center', fontSize: "6vh"}}>Software Engineer <br/> Intern</Text>
                         <Text style={{color: "black", fontSize: "4vh", textAlign: 'center'}}>TD Bank</Text>
@@ -86,68 +76,66 @@ import overlay3 from '../images/overlay3.jpg'
                     <br/>
                     <br/>
                     <Text className="id">1</Text>
-                    </VStack>
+                  </VStack>
                 </div>
+              </div>
             </div>
-            </div>
-
             <div className="item">
-            <div className="item-wrapper">
+              <div className="item-wrapper">
                 <img src={overlay2}></img>
                 <VStack style={{fontFamily: "CanelaRegItalic"}}>
-                <div className="back-text">
-                    <Text className="after-overlay" style={{fontSize: "5vh"}}>Reproducing and refactoring wireframes on the frontend for mortgage application summary pages.</Text>
-                </div>
-                <div className="bottom-text">
-                    <Text className="after-overlay"  style={{fontSize: "6vh", color: "#6A737E"}}>✷✷✷</Text>
-                    <br />
-                    <Text className="after-overlay" style={{fontSize: "4vh", paddingLeft: "20px" }}>React JS / TypeScript / Chakra UI / Temporal</Text>
-                </div>
+                  <div className="back-text">
+                      <Text className="after-overlay" style={{fontSize: "5vh"}}>Reproducing and refactoring wireframes on the frontend for mortgage application summary pages.</Text>
+                  </div>
+                  <div className="bottom-text">
+                      <Text className="after-overlay"  style={{fontSize: "6vh", color: "#6A737E"}}>✷✷✷</Text>
+                      <br />
+                      <Text className="after-overlay" style={{fontSize: "4vh", paddingLeft: "20px" }}>React JS / TypeScript / Chakra UI / Temporal</Text>
+                  </div>
                 </VStack>
                 <div className="img-overlay">
                     <VStack className="item-name">
-                    <VStack alignItems="left" >
+                      <VStack alignItems="left" >
                         <Text style={{textAlign: 'center', fontSize: "6vh"}}>Frontend Engineer <br/>Intern </Text>
                         <Text style={{color: "black", fontSize: "4vh", textAlign: 'center'}}>RFA Labs</Text>
-                    </VStack>
+                      </VStack>
                     <br/>
                     <br/>
                     <Text className="id">2</Text>
                     </VStack>
                 </div>
+              </div>
             </div>
-            </div>
-
             <div className="item">
-            <div className="item-wrapper">
+              <div className="item-wrapper">
                 <img src={overlay3}></img>
                 <VStack style={{fontFamily: "CanelaRegItalic"}}>
-                <div className="back-text">
-                    <Text className="after-overlay" style={{fontSize: "5vh"}}>Focused on enhancing client-facing logic to optimize user experience and page load time for large entertainment brands to perform campaign metrics on customers.</Text>
-                </div>
-                <div style={{padding: '20% 5% 0 5%'}}>
-                    <Text className="after-overlay"  style={{fontSize: "6vh", color: "#6A737E"}}>✷✷✷</Text>
-                    <br />
-                    <Text className="after-overlay" style={{fontSize: "4vh", paddingLeft: "20px" }}>JavaScript, jQuery, Python, PostgresSQL</Text>
-                </div>
+                  <div className="back-text">
+                      <Text className="after-overlay" style={{fontSize: "5vh"}}>Focused on enhancing client-facing logic to optimize user experience and page load time for large entertainment brands to perform campaign metrics on customers.</Text>
+                  </div>
+                  <div style={{padding: '20% 5% 0 5%'}}>
+                      <Text className="after-overlay"  style={{fontSize: "6vh", color: "#6A737E"}}>✷✷✷</Text>
+                      <br />
+                      <Text className="after-overlay" style={{fontSize: "4vh", paddingLeft: "20px" }}>JavaScript, jQuery, Python, PostgresSQL</Text>
+                  </div>
                 </VStack>
                 <div className="img-overlay">
                     <VStack className="item-name">
-                    <VStack alignItems="left" >
-                        <Text style={{textAlign: 'center', fontSize: "6vh"}}>Full Stack <br/> Developer Intern </Text>
-                        <Text style={{color: "black", fontSize: "4vh", textAlign: 'center'}}>Tradable Bits</Text>
-                    </VStack>
+                      <VStack alignItems="left" >
+                          <Text style={{textAlign: 'center', fontSize: "6vh"}}>Full Stack <br/> Developer Intern </Text>
+                          <Text style={{color: "black", fontSize: "4vh", textAlign: 'center'}}>Tradable Bits</Text>
+                      </VStack>
                     <br/>
                     <br/>
                     <Text className="id">3</Text>
                     </VStack>
                 </div>
-            </div>
+              </div>
             </div>  
         </HStack>                
-        </div>
+      </div>
 
-        <div className='container'>
+      <div className='container'>
         <div class="marquee">
           <Stack class="marquee-content scroll">
             {Array.from({ length: 5 }).map(() => (
@@ -164,9 +152,9 @@ import overlay3 from '../images/overlay3.jpg'
 
         <div className='content' style={{ height: '20vh', color: 'white'}}>
             <Flex minWidth='max-content' gap='30vw' fontSize='5vh' fontFamily="CanelaLightItalic">
-            <a target="_blank" href="https://linkedin.com/in/dinaorucevic" style={{textDecoration: "none"}}>linkedIn</a>
-            <a target="_blank" href='mailto:dina.oorucevic@gmail.com' color="black" style={{textDecoration: "none"}}>email</a>
-            <a target="_blank" href='https://github.com/dina-o' color="black" style={{textDecoration: "none"}}>github</a>
+              <a target="_blank" href="https://linkedin.com/in/dinaorucevic" style={{textDecoration: "none"}}>linkedIn</a>
+              <a target="_blank" href='mailto:dina.oorucevic@gmail.com' color="black" style={{textDecoration: "none"}}>email</a>
+              <a target="_blank" href='https://github.com/dina-o' color="black" style={{textDecoration: "none"}}>github</a>
             </Flex>
         </div>
 
@@ -206,9 +194,9 @@ import overlay3 from '../images/overlay3.jpg'
           </VStack>
         </Flex>
 
-        </div>
+      </div>
 
-     </>
+    </>
     );
   }
   

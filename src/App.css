@@ -32,7 +32,7 @@
   position: relative
 }
 
-.fuzzy-overlay {
+.static-overlay {
   position: absolute;
   inset: -200%;
   background-image: url("noise.png");
@@ -306,17 +306,17 @@
 }
 
 .circle {
-    position: absolute;
-    bottom: 40vh;
-    right: 35vw;
-    z-index: 3;
-    width: 5vw;
-    height: 8vh;
-    border: 1px solid rgb(214, 213, 213);
-    background-color: black;
-    border-radius: 31% 45% 74% 35% / 38% 56% 51% 87%;
-    transition: 0.5s;
-    animation: animate-about2 12s linear infinite;
+  position: absolute;
+  bottom: 40vh;
+  right: 35vw;
+  z-index: 3;
+  width: 5vw;
+  height: 8vh;
+  border: 1px solid rgb(214, 213, 213);
+  background-color: black;
+  border-radius: 31% 45% 74% 35% / 38% 56% 51% 87%;
+  transition: 0.5s;
+  animation: animate-about2 12s linear infinite;
 }
 
 .circle::before{
@@ -340,9 +340,7 @@
   animation: animate-about2 12s linear infinite;
 }
 
-
 /* about */
-
 .ladybug {
   width: 30vw; 
   animation: tilt 2s forwards infinite;
@@ -376,7 +374,6 @@
   animation: tilt 2s linear infinite;
 }
 
-
 .marie-about {
   z-index: 2;
   position: absolute;
@@ -395,9 +392,52 @@
   transform: scaleX(-1);
 }
 
+.colour-gradient {
+  background: linear-gradient(var(--color-1), var(--color-2));
+  animation: changeColors 3s infinite alternate;
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+}
+
+@keyframes changeColors {
+  0% {
+    --color-1: rgb(229, 255, 0);
+    --color-2: red;
+  }
+  50% {
+    --color-1: rgb(255, 164, 164);
+    --color-2: rgb(41, 16, 110);
+  }
+  100% {
+    --color-1: blue;
+    --color-2: red;
+  }
+}
+
+.better-place {
+  letter-spacing: 0.05em;
+  font-family: Maeslstrom;
+  text-shadow: 
+    5px 5px 0px #ff3232;
+}
+
+#page-transition-name {
+  animation: transitionIn 2s;
+}
+
+@keyframes transitionIn {
+  from {
+    opacity: 0; 
+    transform: rotateX(-30deg);
+  }
+  to {
+    opacity: 1;
+    transform: rotateX(0);
+  }
+}
+
 
 /* work */
-
 .item {
   position: relative;
   width: 33.3333vw;
@@ -467,6 +507,8 @@ filter: blur(5px);
   padding: 40% 5% 0 5%;
 }
 
+
+/* footer */
 .marquee {
   display: flex;
   overflow: hidden;
@@ -500,48 +542,4 @@ filter: blur(5px);
 
 .scroll {
   animation: scroll 10s linear infinite;
-}
-
-.colour-gradient {
-  background: linear-gradient(var(--color-1), var(--color-2));
-  animation: changeColors 3s infinite alternate;
-  -webkit-text-fill-color: transparent;
-  -webkit-background-clip: text;
-}
-
-@keyframes changeColors {
-  0% {
-    --color-1: rgb(229, 255, 0);
-    --color-2: red;
-  }
-  50% {
-    --color-1: rgb(255, 164, 164);
-    --color-2: rgb(41, 16, 110);
-  }
-  100% {
-    --color-1: blue;
-    --color-2: red;
-  }
-}
-
-.next-level {
-  letter-spacing: 0.05em;
-  font-family: Maeslstrom;
-  text-shadow: 
-    5px 5px 0px #ff3232;
-}
-
-#page-transition-name {
-  animation: transitionIn 2s;
-}
-
-@keyframes transitionIn {
-  from {
-    opacity: 0; 
-    transform: rotateX(-30deg);
-  }
-  to {
-    opacity: 1;
-    transform: rotateX(0);
-  }
 }
