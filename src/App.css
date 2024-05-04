@@ -558,7 +558,7 @@ filter: blur(5px);
   animation: scroll 10s linear infinite;
 }
 
-@media screen and (orientation: landscape) {
+@media screen and (orientation: landscape) and (max-height: 400px) {
   #rotate-device-warning {
     display: none;
   }
@@ -658,6 +658,7 @@ filter: blur(5px);
 
 /* responsive css for smaller screens */
 @media only screen and (max-height: 400px) {
+
   .who-i-am {
     font-size: 4vh;
   }
@@ -708,6 +709,12 @@ filter: blur(5px);
   }
 
 
+}
+
+@media only screen and (max-height: 500px) {
+#rotate-device-warning {
+  display: none;
+}
 }
 
 
