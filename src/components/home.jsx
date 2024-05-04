@@ -1,7 +1,7 @@
-import {Heading, Flex, Spacer, HStack, Stack, Divider, Box, Text} from '@chakra-ui/react'
-import React, { useState, useEffect } from 'react';
+import {Text} from '@chakra-ui/react'
+import React, {useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
-import gsap from 'gsap'
+import {gsap, Power3} from 'gsap'
 import cloud from '../images/clouds.png'
 import angel from '../images/angel.png'
 import lion from '../images/lion.png'
@@ -23,9 +23,50 @@ import ship from '../images/ship.png'
 import angelcutout from '../images/angel-cutout.png'
 import butterfly from '../images/butterfly.gif'
 
-
-
  const Home = () => {
+
+  useEffect(() => {
+    const tl = gsap.timeline();
+    tl.fromTo('.landing-text', {
+      opacity: 0,
+      y: 300,
+    }, {
+      opacity: 1,
+      y: 0,
+      ease: 'power3.out',
+      delay: 0.6
+    })
+
+      tl.fromTo('.angel', { opacity: 0, y: 100 }, { opacity: 1, y: 0, ease: 'power1.inOut', delay: 0.5 }, '<');
+      tl.fromTo('.lion', { opacity: 0, x: -100 }, { opacity: 1, x: 0, ease: 'power3.out', delay: 0.3 }, '<');
+      tl.fromTo('.catfunny', { opacity: 0, rotation: -360 }, { opacity: 1, rotation: 0, ease: 'back.out(1.7)', delay: 0.3 }, '<');
+      tl.fromTo('.elephant', { opacity: 0, scale: 0 }, { opacity: 1, scale: 1, ease: 'elastic.out(1, 0.3)', delay: 0.3 }, '<');
+      tl.fromTo('.saturn', { opacity: 0, scale: 0 }, { opacity: 1, scale: 1, ease: 'elastic.out(1, 0.3)', delay: 0.3 }, '<');
+      tl.fromTo('.cat', { opacity: 0, y: -100 }, { opacity: 1, y: 0, ease: 'power2.out', delay: 0.3 }, '<');
+      tl.fromTo('.womansmoke', { opacity: 0, scale: 0 }, { opacity: 1, scale: 1, ease: 'power1.inOut', delay: 0.3 }, '<');
+      tl.fromTo('.womanlip', { opacity: 0, scale: 0 }, { opacity: 1, scale: 1, ease: 'power1.inOut', delay: 0.3 }, '<');
+      tl.fromTo('.woman', { opacity: 0, x: 100 }, { opacity: 1, x: 0, ease: 'power3.out', delay: 0.3 }, '<');
+      tl.fromTo('.flower', { opacity: 0, y: 200 }, { opacity: 1, y: 0, ease: 'back.out(1.7)', delay: 0.3 }, '<');
+      tl.fromTo('.harp', { opacity: 0, scale: 0 }, { opacity: 1, scale: 1, ease: 'elastic.out(1, 0.3)', delay: 0.3 }, '<');
+      tl.fromTo('.dress', { opacity: 0, scale: 0 }, { opacity: 1, scale: 1, ease: 'power1.inOut', delay: 0.3 }, '<');
+      tl.fromTo('.die', { opacity: 0, y: -100 }, { opacity: 1, y: 0, ease: 'power2.out', delay: 0.3 }, '<');
+      tl.fromTo('.reach', { opacity: 0, scale: 0 }, { opacity: 1, scale: 1, ease: 'power1.inOut', delay: 0.3 }, '<');
+      tl.fromTo('.alice', { opacity: 0, scale: 0 }, { opacity: 1, scale: 1, ease: 'power1.inOut', delay: 0.3 }, '<');
+      tl.fromTo('.moon', { opacity: 0, y: -100 }, { opacity: 1, y: 0, ease: 'power2.out', delay: 0.3 }, '<');
+      tl.fromTo('.ship', { opacity: 0, x: 100 }, { opacity: 1, x: 0, ease: 'power3.out', delay: 0.3 }, '<');
+
+      tl.fromTo('.angelcutout1', { opacity: 0, scale: 0 }, { opacity: 1, scale: 1, ease: 'power1.inOut', delay: 0.5 }, '<');
+      tl.fromTo('.angelcutout2', { opacity: 0, scale: 0 }, { opacity: 1, scale: 1, ease: 'power1.inOut', delay: 0.2 }, '<');
+      tl.fromTo('.angelcutout3', { opacity: 0, scale: 0 }, { opacity: 1, scale: 1, ease: 'power1.inOut', delay: 0.2 }, '<');
+
+      tl.fromTo('.butterfly1', { opacity: 0, scale: 0 }, { opacity: 1, scale: 1, ease: 'power1.inOut', delay: 1 }, '<');
+      tl.fromTo('.butterfly2', { opacity: 0, scale: 0 }, { opacity: 1, scale: 1, ease: 'power1.inOut', delay: 1 }, '<');
+
+      tl.fromTo('.background-circle', { opacity: 0, y: 100 }, { opacity: 1, y: 0, ease: 'back.out(0.5)', delay: 0.3 }, '<');
+      tl.fromTo('.circle', { opacity: 0, y: 100 }, { opacity: 1, y: 0, ease: 'back.out(0.5)'});
+
+
+  }, []);
 
     const navigate = useNavigate();
 
@@ -33,7 +74,7 @@ import butterfly from '../images/butterfly.gif'
       navigate('/about');
     };
 
-   
+  
     return (
      <> 
     <div className='container'>
@@ -41,8 +82,8 @@ import butterfly from '../images/butterfly.gif'
         <div className='content'>
 
             <div className='landing-text'>
-                    <Text fontSize='15vh' fontFamily="CanelaLightItalic" color='white'>greetings,</Text>
-                    <Text fontSize='8vh' fontFamily="CanelaThin" color='white' marginTop='-5vh'>it's dina</Text>
+                    <Text className='greetings' fontSize='15vh' fontFamily="CanelaLightItalic" color='white'>greetings,</Text>
+                    <Text fontSize='8vh' fontFamily="CanelaThin" color='white' marginTop='-5vh'>i'm dina</Text>
             </div>
 
             <img className="cloud1" src={cloud}></img>
