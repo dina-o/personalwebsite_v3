@@ -4,6 +4,7 @@ import { useNavigate } from 'react-router-dom';
 import {gsap, Power3} from 'gsap'
 import cloud from '../images/clouds.png'
 import angel from '../images/angel.png'
+import angellarge from '../images/angel-large.png'
 import lion from '../images/lion.png'
 import alice from '../images/alice.png'
 import elephant from '../images/elephant.png'
@@ -24,6 +25,15 @@ import angelcutout from '../images/angel-cutout.png'
 import butterfly from '../images/butterfly.gif'
 
  const Home = () => {
+
+  const handleOrientationChange = () => {
+    if (window.matchMedia("(orientation: landscape)").matches) {
+      window.location.reload();
+    }
+  };
+  
+  window.addEventListener("orientationchange", handleOrientationChange);
+
 
   useEffect(() => {
     const tl = gsap.timeline();
@@ -75,9 +85,7 @@ import butterfly from '../images/butterfly.gif'
     return (
      <> 
       <div className='container'>
-
         <div className='content'>
-
             <div className='landing-text'>
               <Text className='greetings' fontSize='15vh' fontFamily="CanelaLightItalic" color='white'>greetings,</Text>
               <Text fontSize='8vh' fontFamily="CanelaThin" color='white' marginTop='-5vh'>i'm dina</Text>
@@ -123,6 +131,12 @@ import butterfly from '../images/butterfly.gif'
         <div className='static-overlay'></div>
    
       </div>
+
+      <div id="rotate-device-warning">
+          <Text>For the best experience, please hold your device in landscape orientation.</Text>
+          <img className="angel-vertical" src={angellarge}></img>
+      </div>
+
      </>
     );
   }

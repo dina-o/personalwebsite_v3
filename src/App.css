@@ -341,9 +341,20 @@
 }
 
 /* about */
+
+.who-i-am {
+  font-size: 3vh;
+  font-family: 'CanelaLightItalic';
+  color: white;
+}
+
 .ladybug {
   width: 30vw; 
   animation: tilt 2s forwards infinite;
+}
+
+#hero-text {
+  height: 140vh;
 }
 
 @keyframes tilt {
@@ -507,6 +518,9 @@ filter: blur(5px);
   padding: 40% 5% 0 5%;
 }
 
+.bottom-text-three {
+  padding: 20% 5% 0 5%;
+}
 
 /* footer */
 .marquee {
@@ -543,3 +557,158 @@ filter: blur(5px);
 .scroll {
   animation: scroll 10s linear infinite;
 }
+
+@media screen and (orientation: landscape) {
+  #rotate-device-warning {
+    display: none;
+  }
+
+  .lion {
+    width: 18vw;
+  }
+
+  .die {
+    top: 13vh;
+  }
+
+  .reach {
+    width: 65vw;
+    left: 2vw;
+  }
+
+  .angel {
+    width: 40vw;
+  }
+
+  .womanlip {
+    width: 35vw;
+  }
+
+  .womansmoke {
+    width: 32vw;
+  }
+  
+  .catfunny {
+    width: 45vw;
+    right: 3vw;
+    top: -15vh;
+  }
+
+.ship {
+  width: 25vw;
+}
+
+.angelcutout1 {
+  width: 35vw;
+}
+
+.angelcutout2 {
+  width: 35vw;
+}
+
+.angelcutout3 {
+  width: 35vw;
+}
+
+.dress {
+  width: 20vw;
+  bottom: 10vh;
+  right: 17vw;
+}
+
+.moon {
+  width: 45vw;
+}
+
+.flower {
+  bottom: -5vh;
+  right: 33vw;
+}
+
+.saturn {
+  bottom: -20vh;
+}
+}
+
+@media screen and (orientation: portrait) {
+  #rotate-device-warning {
+    height: 100vh;
+    display: grid;
+    place-items: center;
+    z-index: 5;
+    color: #ffffff;
+    font-family: "CanelaLightItalic";
+    text-align: center;
+    position: relative;
+    padding: 15%;
+    font-size: 5vw;
+  }
+
+  .angel-vertical {
+    opacity: 70%;
+    width: 400vh;
+    top: 10vh;
+    position: absolute;
+  }
+
+  .container{
+    display: none;
+  }
+}
+
+
+/* responsive css for smaller screens */
+@media only screen and (max-height: 400px) {
+  .who-i-am {
+    font-size: 4vh;
+  }
+
+  #page-transition-name {
+    font-size: 15vh;
+    margin-left: 5%;
+    margin-top: -5%;
+  }
+
+  #hero-text {
+    height: 170vh;
+  }
+
+  .die-about {
+    right: 10vw;
+    bottom: 20vh;
+    width: 20vw;
+  }
+  
+  .marie-about {
+    left: 1vw;
+    top: 25vh;
+    width: 20vw;
+    rotate: -5deg;
+  }
+  
+  .angel-about {
+    position: absolute;
+    right: -7vw;
+    top: 5vh;
+    width:35vw;
+    opacity: 65%;
+    transform: scaleX(-1);
+  }
+
+  .bottom-text-three {
+    padding: 5% 5% 0 5%;
+  }
+
+  .marquee {
+    font-size: 6vh;
+  }
+
+  .footer-text {
+    font-size: 3vh;
+    font-family: CanelaLight;
+  }
+
+
+}
+
+

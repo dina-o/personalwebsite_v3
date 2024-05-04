@@ -3,13 +3,23 @@ import {React, useEffect} from 'react';
 import {gsap, Power3} from 'gsap';
 import ladybug from '../images/ladybug.png'
 import angel from '../images/angel.png'
+import angellarge from '../images/angel-large.png'
 import die from '../images/die.png'
 import marie from '../images/marie.png'
 import overlay from '../images/overlay.png'
 import overlay2 from '../images/overlay2.jpg'
 import overlay3 from '../images/overlay3.jpg'
 
+
  const About = () => {
+
+  const handleOrientationChange = () => {
+    if (window.matchMedia("(orientation: landscape)").matches) {
+      window.location.reload();
+    }
+  };
+  
+  window.addEventListener("orientationchange", handleOrientationChange);
 
     useEffect(() => {
         const tl = gsap.timeline();
@@ -30,7 +40,7 @@ import overlay3 from '../images/overlay3.jpg'
         <hr style={{color: 'white', marginTop: '3%'}}/>
 
         <div className='content'>
-            <Text className='who-i-am' fontSize='3vh' fontFamily="CanelaLightItalic" color='white'>(WHO I AM)</Text>
+            <Text className='who-i-am'>(WHO I AM)</Text>
             <Text id='page-transition-name' fontSize='8vh' fontFamily="CanelaThin" color='white' style={{ display: 'flex', alignItems: 'center' }}>
                 dina <img className="ladybug" src={ladybug} alt="Ladybug"/> orucevic
             </Text>
@@ -40,7 +50,7 @@ import overlay3 from '../images/overlay3.jpg'
       </div>
 
       <div className='container'>
-        <div className='content' style={{ height: '140vh'}}>
+        <div className='content' id='hero-text'>
 
           <Heading fontWeight='100' fontSize='12vh' fontFamily="CanelaThin" color='white' marginTop= "-5vh" padding="12%"  textAlign="center" zIndex = '3'>
             I’M A <a style={{ color: "#6c4a30", textShadow: '5px 5px 10px brown'}}>CAFFEINATED</a> UNDERGRAD, CSS GEEK, BUDDING <b  style={{ fontFamily: 'CanelaLightItalic', color: "pink"}}>PRODUCT MANAGER</b> / <i className="colour-gradient" style={{ fontFamily: 'CanelaLightItalic'}}>WEB DEVELOPER</i> FOCUSED ON LEVERAGING THE LATEST TECH TO MAKE THE WORLD <br/> <b className='better-place' style={{ fontFamily: 'CanelaRegItalic'}}> A BETTER PLACE</b>
@@ -113,7 +123,7 @@ import overlay3 from '../images/overlay3.jpg'
                   <div className="back-text">
                       <Text className="after-overlay" style={{fontSize: "5vh"}}>Focused on enhancing client-facing logic to optimize user experience and page load time for large entertainment brands to perform campaign metrics on customers.</Text>
                   </div>
-                  <div style={{padding: '20% 5% 0 5%'}}>
+                  <div className='bottom-text-three'>
                       <Text className="after-overlay"  style={{fontSize: "6vh", color: "#6A737E"}}>✷✷✷</Text>
                       <br />
                       <Text className="after-overlay" style={{fontSize: "4vh", paddingLeft: "20px" }}>JavaScript / jQuery / Python / PostgresSQL</Text>
@@ -173,7 +183,7 @@ import overlay3 from '../images/overlay3.jpg'
               lineHeight: '1',
             }}
           >
-            <Text color="white">Dina Orucevic, 2024</Text>
+            <Text className='footer-text' color="white">Dina Orucevic, 2024</Text>
           </VStack>
           <Spacer />
           <VStack
@@ -190,10 +200,15 @@ import overlay3 from '../images/overlay3.jpg'
               lineHeight: '1',
             }}
           >
-            <Text>designed and developed with love</Text>
+            <Text className='footer-text'>designed and developed with love</Text>
           </VStack>
         </Flex>
 
+      </div>
+
+      <div id="rotate-device-warning">
+          <Text>For the best experience, please hold your device in landscape orientation.</Text>
+          <img className="angel-vertical" src={angellarge}></img>
       </div>
 
     </>
