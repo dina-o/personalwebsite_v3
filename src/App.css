@@ -361,6 +361,10 @@
   height: 150vh;
 }
 
+.about-text {
+  padding: 10%;
+}
+
 @keyframes tilt {
   0% {
     transform: rotate(0deg);
@@ -678,25 +682,30 @@ filter: blur(5px);
     height: 170vh;
   }
 
+  .about-text {
+    padding: 5%;
+  }
+
   .die-about {
-    right: 11vw;
-    bottom: 22vh;
+    right: 5vw;
+    bottom: 20vh;
     width: 20vw;
   }
   
   .marie-about {
-    left: 1vw;
-    top: 25vh;
-    width: 20vw;
+    left: -2vw;
+    top: 40vh;
+    width: 22vw;
     rotate: -5deg;
+    opacity: 50%;
   }
   
   .angel-about {
     position: absolute;
     right: -7vw;
-    top: 5vh;
+    top: 20vh;
     width:35vw;
-    opacity: 65%;
+    opacity: 50%;
     transform: scaleX(-1);
   }
 

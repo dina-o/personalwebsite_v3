@@ -52,7 +52,7 @@ import overlay3 from '../images/overlay3.jpg'
       <div className='container'>
         <div className='content' id='hero-text'>
 
-          <Heading fontWeight='100' fontSize='12vh' fontFamily="CanelaThin" color='white' marginTop= "-5vh" padding="10%" textAlign="center" zIndex = '3'>
+          <Heading className='about-text' fontWeight='100' fontSize='12vh' fontFamily="CanelaThin" color='white' marginTop= "-5vh" textAlign="center" zIndex = '3'>
             I’M A <a style={{ color: "#6c4a30", textShadow: '5px 5px 10px brown'}}>CAFFEINATED</a> UNDERGRAD, <b className="colour-gradient" style={{ fontFamily: 'CanelaLightItalic', color: "pink"}}> CSS GEEK </b>, BUDDING <i style={{ fontFamily: 'CanelaLightItalic', color: "pink"}}>FRONTEND / WEB DEVELOPER</i>&thinsp;FOCUSED ON LEVERAGING THE LATEST TECH TO MAKE THE WORLD <br/> <b className='better-place' style={{ fontFamily: 'CanelaRegItalic'}}> A BETTER PLACE</b>
           </Heading>
           <img className="die-about" src={die}></img>
