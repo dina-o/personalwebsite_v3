@@ -384,7 +384,7 @@
   position: absolute;
   right: 10vw;
   bottom: 10vh;
-  width: 15vw;
+  width: 20vw;
   rotate: 10deg;
   animation: tilt 2s linear infinite;
 }
@@ -392,10 +392,11 @@
 .marie-about {
   z-index: 2;
   position: absolute;
-  left: 3vw;
+  left: 0vw;
   top: 35vh;
-  width: 15vw;
+  width: 25vw;
   rotate: -5deg;
+  opacity: 75%;
 }
 
 .angel-about {
