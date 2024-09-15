@@ -141,7 +141,7 @@
   z-index: 1;
   left: -1vw;
   bottom: 30vh;
-  width: 13vw;
+  width: 15vw;
 }
 
 .alice {
@@ -155,9 +155,9 @@
 .elephant {
   z-index: 1;
   position: absolute;
-  left: -1vw;
-  top: -6vh;
-  width: 30vw;
+  left: 2vw;
+  top: -5vh;
+  width: 32vw;
 }
 
 .saturn {
