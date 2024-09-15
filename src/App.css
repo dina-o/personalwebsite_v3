@@ -358,7 +358,7 @@
 }
 
 #hero-text {
-  height: 140vh;
+  height: 150vh;
 }
 
 @keyframes tilt {
@@ -396,7 +396,7 @@
   top: 35vh;
   width: 25vw;
   rotate: -5deg;
-  opacity: 75%;
+  opacity: 50%;
 }
 
 .angel-about {
@@ -404,7 +404,7 @@
   right: -2vw;
   top: 20vh;
   width: 27vw;
-  opacity: 75%;
+  opacity: 50%;
   transform: scaleX(-1);
 }
 
