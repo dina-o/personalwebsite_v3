@@ -69,19 +69,19 @@ import overlay3 from '../images/overlay3.jpg'
                 <img src={overlay}></img>
                 <VStack style={{fontFamily: "CanelaRegItalic"}}>
                   <div className="back-text">
-                      <Text className="after-overlay" style={{fontSize: "5vh"}}>Designed and developed end to end proof of concepts for Visa's Pay by Bank feature and Interac.</Text>
+                      <Text className="after-overlay" style={{fontSize: "5vh"}}>Reproduced and refactored wireframes on the frontend for mortgage application summary pages.</Text>
                   </div>
                   <div className="bottom-text">
                       <Text className="after-overlay"  style={{fontSize: "6vh", color: "#6A737E"}}>✷✷✷</Text>
                       <br />
-                      <Text className="after-overlay" style={{fontSize: "4vh", paddingLeft: "20px" }}>React JS / TypeScript / Node.js / MongoDB</Text>
+                      <Text className="after-overlay" style={{fontSize: "4vh"}}>React JS / TypeScript / Chakra UI / Temporal</Text>
                   </div>
                 </VStack>
                 <div className="img-overlay">
                   <VStack className="item-name">
                     <VStack alignItems="left">
-                        <Text style={{textAlign: 'center', fontSize: "6vh"}}>Software Engineer <br/> Intern</Text>
-                        <Text style={{color: "black", fontSize: "4vh", textAlign: 'center'}}>TD Bank</Text>
+                        <Text style={{textAlign: 'center', fontSize: "6vh"}}>Frontend Developer<br/> Intern</Text>
+                        <Text style={{color: "black", fontSize: "4vh", textAlign: 'center'}}>RFA Labs</Text>
                     </VStack>
                     <br/>
                     <br/>
@@ -95,19 +95,19 @@ import overlay3 from '../images/overlay3.jpg'
                 <img src={overlay2}></img>
                 <VStack style={{fontFamily: "CanelaRegItalic"}}>
                   <div className="back-text">
-                      <Text className="after-overlay" style={{fontSize: "5vh"}}>Reproducing and refactoring wireframes on the frontend for mortgage application summary pages.</Text>
+                      <Text className="after-overlay" style={{fontSize: "5vh"}}>Enhancing client-facing features to analyze fan engagement and track campaign performance for entertainment brands (Ticketmaster, NBA).</Text>
                   </div>
                   <div className="bottom-text">
                       <Text className="after-overlay"  style={{fontSize: "6vh", color: "#6A737E"}}>✷✷✷</Text>
                       <br />
-                      <Text className="after-overlay" style={{fontSize: "4vh", paddingLeft: "20px" }}>React JS / TypeScript / Chakra UI / Temporal</Text>
+                      <Text className="after-overlay" style={{fontSize: "4vh"}}>JavaScript / jQuery / Python / PostgresSQL</Text>
                   </div>
                 </VStack>
                 <div className="img-overlay">
                     <VStack className="item-name">
                       <VStack alignItems="left" >
-                        <Text style={{textAlign: 'center', fontSize: "6vh"}}>Frontend Engineer <br/>Intern </Text>
-                        <Text style={{color: "black", fontSize: "4vh", textAlign: 'center'}}>RFA Labs</Text>
+                        <Text style={{textAlign: 'center', fontSize: "6vh"}}>Full Stack Developer <br/>Intern </Text>
+                        <Text style={{color: "black", fontSize: "4vh", textAlign: 'center'}}>Tradable Bits</Text>
                       </VStack>
                     <br/>
                     <br/>
@@ -121,19 +121,19 @@ import overlay3 from '../images/overlay3.jpg'
                 <img src={overlay3}></img>
                 <VStack style={{fontFamily: "CanelaRegItalic"}}>
                   <div className="back-text">
-                      <Text className="after-overlay" style={{fontSize: "5vh"}}>Focused on enhancing client-facing logic to optimize user experience and page load time for large entertainment brands to perform campaign metrics on customers.</Text>
+                      <Text className="after-overlay" style={{fontSize: "5vh"}}>Managed a reusable UI component library, transforming elements into well-documented Storybook components and ensuring design consistency.</Text>
                   </div>
-                  <div className='bottom-text-three'>
+                  <div className='bottom-text'>
                       <Text className="after-overlay"  style={{fontSize: "6vh", color: "#6A737E"}}>✷✷✷</Text>
                       <br />
-                      <Text className="after-overlay" style={{fontSize: "4vh", paddingLeft: "20px" }}>JavaScript / jQuery / Python / PostgresSQL</Text>
+                      <Text className="after-overlay" style={{fontSize: "4vh"}}>React, JavaScript, Node.js</Text>
                   </div>
                 </VStack>
                 <div className="img-overlay">
                     <VStack className="item-name">
                       <VStack alignItems="left" >
-                          <Text style={{textAlign: 'center', fontSize: "6vh"}}>Full Stack <br/> Developer Intern </Text>
-                          <Text style={{color: "black", fontSize: "4vh", textAlign: 'center'}}>Tradable Bits</Text>
+                          <Text style={{textAlign: 'center', fontSize: "6vh"}}>Frontend Developer <br/>Intern </Text>
+                          <Text style={{color: "black", fontSize: "4vh", textAlign: 'center'}}>Interac Corp.</Text>
                       </VStack>
                     <br/>
                     <br/>
@@ -183,7 +183,7 @@ import overlay3 from '../images/overlay3.jpg'
               lineHeight: '1',
             }}
           >
-            <Text className='footer-text' color="white">Dina Orucevic, 2024</Text>
+            <Text className='footer-text' color="white">Dina Orucevic, 2025</Text>
           </VStack>
           <Spacer />
           <VStack
